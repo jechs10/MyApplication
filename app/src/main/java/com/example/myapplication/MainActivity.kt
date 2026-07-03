@@ -21,12 +21,7 @@ class MainActivity : ComponentActivity() {
         checkPasswordStrength("someTestPassword")
         setContent {
             MyApplicationTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+                GuessNumberScreen()
             }
         }
     }
